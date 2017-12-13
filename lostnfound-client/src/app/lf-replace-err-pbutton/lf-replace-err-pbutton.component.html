@@ -1,0 +1,20 @@
+<!-- <button pButton label="Search" icon="fa-search"></button> -->
+<!-- <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-button-text" type="button">Submit</button> -->
+
+<!-- look like another bug this does not work
+   <div class="red" fxLayout="column" fxLayoutAlign="start none">
+    <button fxFlex="grow">Submit</button>
+</div> -->
+<div>
+  <button (click)="onInnerButtonClick($event)" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="min-width: 100%">
+    <div class="ui-button-text"> 
+      {{label}}
+    </div>
+  </button>
+</div>
+
+<!-- <div>
+    <div class="ui-button-text"> 
+        {{label}}
+      </div>
+  </div> -->

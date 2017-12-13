@@ -1,0 +1,8 @@
+:host {
+    min-height: 100%;
+    display: flex;
+}
+
+.router-content {
+    width: 100%;
+}
