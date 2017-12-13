@@ -1,0 +1,27 @@
+/* :host {
+    min-height: 100%;
+    display: flex;
+}
+
+.router-content {
+    flex: 1 1 auto;
+}
+
+.dateTimeField-input {
+	vertical-align: middle;
+    margin-right: 1px;
+    color: red;
+}
+
+.dateTimeField {
+    background-color: red;
+} */
+
+:host {
+    min-height: 100%;
+    display: flex;
+}
+
+.router-content {
+    width: 100%;
+}

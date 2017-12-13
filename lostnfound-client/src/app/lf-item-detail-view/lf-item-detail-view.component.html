@@ -1,0 +1,38 @@
+<div fxLayout="column" fxLayoutAlign="start none" fxLayoutGap="10px">
+
+  <label class="ui-widget" for="type">Type</label>
+  <p-dropdown [style]="{'min-width':'100%'}" [options]="typeItems" (onChange)="onTypeChange($event)" [(ngModel)]="selectedType" optionLabel="name" ></p-dropdown>
+
+  <label *ngIf="isSelectedItemAsOtherType()" class="ui-widget" for="sub-type">Type Specific</label>
+  <input *ngIf="isSelectedItemAsOtherType()" id="sub-type" type="text" size="30" placeholder="Please specific the thing you lost" pInputText>
+
+  <div fxLayout="row" fxLayoutAlign="end none" fxLayoutGap="10px">
+    <div fxLayout="column" fxFlex="grow" fxLayoutAlign="start none" fxLayoutGap="10px">
+      <label class="ui-widget" for="place">Place</label>
+      <input id="place" type="text" pInputText>
+    </div>
+    <div fxLayout="column" fxFlex="40" fxLayoutGap="10px">
+      <label class="ui-widget" for="time">Time</label>
+      <p-calendar [monthNavigator]="true" [yearNavigator]="true" yearRange="2000:2030"></p-calendar>
+    </div>
+  </div>
+
+  <label class="ui-widget" for="contact">Contact</label>
+  <input id="contact" type="text" size="30" pInputText>
+
+  <label *ngIf="isSelectedItemAsPersonalIdentifyItem()" class="ui-widget" for="name">Name</label>
+  <input *ngIf="isSelectedItemAsPersonalIdentifyItem()" id="name" type="text" size="30" pInputText>
+
+  <label *ngIf="isSelectedItemAsPersonalIdentifyItem()" class="ui-widget" for="id-number">ID Number</label>
+  <input *ngIf="isSelectedItemAsPersonalIdentifyItem()" id="id-number" type="text" size="30" pInputText>
+
+  <!-- <label class="ui-widget" for="issues-date">Issues Date</label>
+  <input id="issues-date" type="text" size="30" pInputText>
+
+  <label class="ui-widget" for="issues-number">Issues Place</label>
+  <input id="issues-number" type="text" size="30" pInputText> -->
+
+  <label class="ui-widget">Description</label>
+  <textarea pInputTextarea autoResize="false" style="min-height: 100px; resize: vertical;"></textarea>
+
+</div>

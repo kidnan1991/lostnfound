@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* @import './assets/vendor/bootstrap/bootstrap.min.css'; */
+
+/********************************* page structure layout *****************************/
+html, body, .page {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* body {
+  overflow: hidden;
+} */
+
+.container {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  overflow-y: auto;
+  background-color: red; 
+}
+
+/* .page-header {
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 5px;
+} */
+
+.page-contain {
+  overflow-y: auto;
+}
+
+/* .page-footer {
+  background-color: yellow;
+  border: 2px dashed black;
+  border-radius: 5px;
+} */
+
+/********************************* header layout *****************************/
+
+.banner {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+
+.banner .ui-widget-header {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+
+.banner-nav a {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.banner-nav a:hover {
+  background: #1e7597;
+}
+
+.banner-nav a .active {
+  background: rgb(30, 117, 151);
+}
+
+/********************************* contain scrollbar *****************************/
+.content-scrollable::-webkit-scrollbar-track
+ {
+   /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+   /* box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+   border-radius: 10px;
+   /* background-color: rgba(48, 48, 48, 0.4); */
+   background-color: transparent;
+ }
+ 
+ .content-scrollable::-webkit-scrollbar
+ {
+   width: 10px;
+   background-color: transparent;
+   border-radius: 10px;
+ }
+ 
+ .content-scrollable::-webkit-scrollbar-thumb
+ {
+   background-color: #0078ae;
+   border-radius: 10px;
+   /* border: 2px solid #555555; */
+ }
+
+ .content-scrollable::-webkit-scrollbar-track-piece
+ {
+  background-color: transparent;
+ }
+
+ .content-scrollable::-webkit-scrollbar-corner
+ {
+  background-color: transparent;
+ }
+ 
+/********************************* utility layout *****************************/
+.list-style-none {
+  list-style: none !important;
+}
+
+.red {
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.blue {
+    background-color: blue;
+    border: 2px dotted black;
+    border-radius: 5px;
+}
+
+.yellow {
+    background-color: yellow;
+    border: 2px dashed black;
+    border-radius: 5px;
+}
+
+
