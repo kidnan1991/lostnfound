@@ -1,0 +1,31 @@
+<div fxLayout="row" fxFlex="grow" class="router-content " fxLayoutAlign="start stretch">
+  <div fxFlex="30"></div>
+  <div fxLayout="column" fxFlex="40" fxLayoutAlign="start none" fxLayoutGap="10px">
+    <div fxFlex="10"></div>
+    <div fxLayout="row" fxFlex="50" fxLayoutAlign="center none">
+      <button (click)="onClickFoundItemButton()" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+        fxFlex="40" type="button">
+        <div fxLayout="column">
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <i class="fa fa-user fa-5x"></i>
+            <i class="fa fa-exclamation fa-4x"></i>
+          </div>
+          I found something
+        </div>
+      </button>
+      <div fxFlex="10"></div>
+      <button (click)="onClickLostItemButton()" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+        fxFlex="40" type="button">
+        <div fxLayout="column">
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <i class="fa fa-user fa-5x"></i>
+            <i class="fa fa-question fa-4x"></i>
+          </div>
+          I lost something
+        </div>
+      </button>
+    </div>
+    <div fxFlex="10"></div>
+  </div>
+  <div fxFlex="30"></div>
+</div>

@@ -1,0 +1,97 @@
+<!-- <div class="container" fxLayout="column" fxLayoutAlign="center none">
+  <app-lf-nav-bar></app-lf-nav-bar>
+  <div fxFlex="1" fxLayout="column">
+    <router-outlet></router-outlet>
+  </div>
+  <app-lf-footer></app-lf-footer>
+</div> -->
+
+<div class="page" fxLayout="column">
+  <div class="page-header" fxFlex="none">
+    <app-lf-nav-bar></app-lf-nav-bar>
+  </div>
+  <div class="page-contain content-scrollable" fxFlex="grow" fxLayout="column">
+    <div fxFlex="grow">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="page-footer" fxFlex="none">
+      <app-lf-footer></app-lf-footer>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="page" fxLayout="column">
+  <div class="page-header" fxFlex="none">
+    <app-lf-nav-bar></app-lf-nav-bar>
+  </div>
+  <div class="page-contain" fxFlex="grow" fxLayout="column">
+    <div fxFlex="grow">
+        <router-outlet></router-outlet>
+
+        <button pButton label="Search" icon="fa-search"></button>
+        
+        <label class="ui-widget" for="time">Time</label>
+        <p-calendar [inputStyle]="{'width':'100%'}" [style]="{'width':'100%'}" [monthNavigator]="true" [yearNavigator]="true" yearRange="2000:2030"></p-calendar>
+        
+        <app-lf-replace-err-pbutton [label]="'Submit'"></app-lf-replace-err-pbutton>
+        <button>{{title}}</button>
+        <h1>This is {{title}}</h1>
+        
+        <button pButton label="Search" icon="fa-search"></button>
+    </div>
+    <div class="page-footer" fxFlex="none">
+      <app-lf-footer></app-lf-footer>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+<!-- <div class="page" fxLayout="column">
+    <div class="page-header" fxFlex="none">
+      <h1>This is header</h1>
+    </div>
+    <div class="page-contain" fxFlex="grow" fxLayout="column">
+      <div fxFlex="grow">
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+        <h3>This is a sentence</h3>
+      </div>
+      <div class="page-footer" fxFlex="none">
+        <h3>This is footer</h3>
+      </div>
+    </div>
+  </div> -->
